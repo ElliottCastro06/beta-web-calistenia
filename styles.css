@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 1rem;
+}
+
+#sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    text-align: center;
+    margin: 1rem;
+}
+
+.section img {
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.05);
+}
+
+.plan {
+    text-align: center;
+    margin: 1rem;
+}
+
+.plan img {
+    max-width: 100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.plan img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #45a049;
+}

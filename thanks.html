@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu compra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function mostrarContenido() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const plan = urlParams.get('plan');
+            document.querySelectorAll('.contenido').forEach(element => {
+                if (element.id === plan) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="mostrarContenido()">
+    <header>
+        <h1>Gracias por tu compra</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Accede a tu contenido</h2>
+            <p>A continuación, puedes descargar los archivos PDF y clips de video correspondientes a tu plan.</p>
+            
+            <div id="front-lever-basico" class="contenido" style="display: none;">
+                <h3>Front Lever Básico</h3>
+                <ul>
+                    <li><a href="ruta/al/front_lever_basico.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/front_lever_basico.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+            
+            <div id="front-lever-medio" class="contenido" style="display: none;">
+                <h3>Front Lever Medio</h3>
+                <ul>
+                    <li><a href="ruta/al/front_lever_medio.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/front_lever_medio.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+            
+            <div id="front-lever-avanzado" class="contenido" style="display: none;">
+                <h3>Front Lever Avanzado</h3>
+                <ul>
+                    <li><a href="ruta/al/front_lever_avanzado.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/front_lever_avanzado.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+            
+            <div id="planche-basico" class="contenido" style="display: none;">
+                <h3>Planche Básico</h3>
+                <ul>
+                    <li><a href="ruta/al/planche_basico.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/planche_basico.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+            
+            <div id="planche-medio" class="contenido" style="display: none;">
+                <h3>Planche Medio</h3>
+                <ul>
+                    <li><a href="ruta/al/planche_medio.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/planche_medio.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+            
+            <div id="planche-avanzado" class="contenido" style="display: none;">
+                <h3>Planche Avanzado</h3>
+                <ul>
+                    <li><a href="ruta/al/planche_avanzado.pdf" download>Descargar PDF</a></li>
+                    <li><a href="ruta/al/planche_avanzado.mp4" download>Descargar Video</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Redes sociales:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/elliott_castro_sw/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/elliot.castro.507/">Facebook</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
